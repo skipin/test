@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Desk;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class DeskListFactory extends Factory
@@ -14,7 +15,8 @@ class DeskListFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->company(),
+            'desk_id' => Desk::query()->inRandomOrder()->value('id'),
         ];
     }
 }
