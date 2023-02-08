@@ -13,6 +13,6 @@ class DeskListTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\DeskList::factory(20)->create();
+        \App\Models\DeskList::factory(5)->create();
     }
 }

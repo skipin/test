@@ -15,7 +15,7 @@ class DeskListFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->company(),
+            'name' => $this->faker->city(),
             'desk_id' => Desk::query()->inRandomOrder()->value('id'),
         ];
     }

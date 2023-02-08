@@ -13,6 +13,6 @@ class DeskTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Desk::factory(10)->create();
+        \App\Models\Desk::factory(2)->create();
     }
 }

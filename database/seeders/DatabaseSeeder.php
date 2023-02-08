@@ -19,13 +19,10 @@ class DatabaseSeeder extends Seeder
         $this->call(DeskListTableSeeder::class);
         $this->command->info('Таблица списков блога загружена данными!');
 
-        /*$this->call(CardTableSeeder::class);
+        $this->call(CardTableSeeder::class);
         $this->command->info('Таблица карточек загружена данными!');
 
-
-
-
         $this->call(TaskTableSeeder::class);
-        $this->command->info('Таблица задач блога загружена данными!');*/
+        $this->command->info('Таблица задач блога загружена данными!');
     }
 }

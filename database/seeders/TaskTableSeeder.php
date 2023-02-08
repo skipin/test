@@ -13,6 +13,6 @@ class TaskTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Task::factory(20)->create();
     }
 }
